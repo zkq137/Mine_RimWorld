@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>Touzi.MineRimWorld</packageId>
+  <name>Mine RimWorld</name>
+  <author>Touzi</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <forceLoadBefore>
+  </forceLoadBefore>
+  <description>我的世界工具/武器包
+    第一次制作mod，本mod用于学习制作流程，目前只包含一把木剑，计划之后添加其他武器和工具
+  </description>
+</ModMetaData>
