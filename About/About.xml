@@ -9,6 +9,7 @@
   <forceLoadBefore>
   </forceLoadBefore>
   <description>我的世界工具/武器包
-    第一次制作mod，本mod用于学习制作流程，目前只包含一把木剑，计划之后添加其他武器和工具
+    包含了从原木到下界合金的所有工具和武器,其中工具会提升对应工种的工作速度和产量。
+    第一次制作mod，如有bug请多包涵并及时反馈。
   </description>
 </ModMetaData>

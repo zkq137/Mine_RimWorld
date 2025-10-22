@@ -1,20 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>WoodenSword</defName>
-    <label>木剑</label>
-    <description>这是一把木剑,消耗一点耐久后或许可以拿去制作拔刀剑</description>
+    <defName>WoodenShovel</defName>
+    <label>木铲</label>
+    <description>这是一把木铲，小幅提升了建造速度</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/wooden_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/wooden_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Animal</techLevel>
     <weaponTags>
       <li>NeolithicMeleeBasic</li>
-      <li>LongSword</li>
     </weaponTags>
     <costStuffCount>30</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
@@ -23,6 +21,9 @@
       <Mass>1</Mass>
       <MarketValue>40</MarketValue>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.1</ConstructionSpeed>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <stuffCategories>
@@ -30,27 +31,11 @@
     </stuffCategories>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>13</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>13</power>
+        <power>8</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -68,21 +53,19 @@
   </ThingDef>
 
 
-
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>StoneSword</defName>
-    <label>石剑</label>
-    <description>这是一把石剑</description>
+    <defName>StoneShovel</defName>
+    <label>石铲</label>
+    <description>这是一把石铲，小幅提升了建造速度和建筑修复成功率</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/stone_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/stone_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Neolithic</techLevel>
     <weaponTags>
       <li>MedievalMeleeDecent</li>
-      <li>LongSword</li>
     </weaponTags>
     <costStuffCount>30</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
@@ -91,6 +74,10 @@
       <Mass>2.5</Mass>
       <MarketValue>50</MarketValue>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.2</ConstructionSpeed>
+        <FixBrokenDownBuildingSuccessChance>0.05</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <stuffCategories>
@@ -98,27 +85,11 @@
     </stuffCategories>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>18</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>18</power>
+        <power>10</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -135,23 +106,21 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-  
 
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>IronSword</defName>
-    <label>铁剑</label>
-    <description>来硬的！这是一把铁剑</description>
+    <defName>IronShovel</defName>
+    <label>铁铲</label>
+    <description>这是一把铁铲，提升了建造速度和建筑修复成功率，小幅提升了建造成功率</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/iron_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/iron_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
     </weaponTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -159,6 +128,11 @@
       <Mass>2</Mass>
       <MarketValue>70</MarketValue>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.4</ConstructionSpeed>
+        <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
+        <ConstructSuccessChance>0.05</ConstructSuccessChance>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <costList>
@@ -167,27 +141,11 @@
     </costList>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>11</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>23</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>23</power>
+        <power>11</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -206,19 +164,18 @@
 
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>GoldenSword</defName>
-    <label>金剑</label>
-    <description>这是一把金剑，虽然不是什么高级武器，但作为一件优秀的艺术品让居民心情愉快。</description>
+    <defName>GoldenShovel</defName>
+    <label>金铲</label>
+    <description>这是一把金铲，作为一件优秀的艺术品让居民心情愉快，并提升了建造速度，建筑修复成功率和建造成功率</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/golden_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/golden_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
     </weaponTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -227,6 +184,11 @@
       <MarketValue>800</MarketValue>
       <Beauty>100</Beauty>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.5</ConstructionSpeed>
+        <FixBrokenDownBuildingSuccessChance>0.15</FixBrokenDownBuildingSuccessChance>
+        <ConstructSuccessChance>0.1</ConstructSuccessChance>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <costList>
@@ -235,27 +197,11 @@
     </costList>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>2.5</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>25</power>
+        <power>12</power>
         <cooldownTime>2.5</cooldownTime>
       </li>
     </tools>
@@ -274,19 +220,18 @@
 
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>DiamondSword</defName>
-    <label>钻石剑</label>
-    <description>"这是一把钻石剑!我把半年的工资都花在上面了"\n"那些都是营销，只有疯子才会用一把连火都不能碰的剑"\n“但他们说这是用玻璃钢做的”\n“唉”（扶额）</description>
+    <defName>DiamondShovel</defName>
+    <label>钻石铲</label>
+    <description>这是一把钻石铲！大幅提升了建造速度，建筑修复成功率和建造成功率</description>
     <possessionCount>1.5</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/diamond_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/diamond_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Industrial</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
     </weaponTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -295,6 +240,11 @@
       <MarketValue>100</MarketValue>
       <Beauty>40</Beauty>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.7</ConstructionSpeed>
+        <FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+        <ConstructSuccessChance>0.15</ConstructSuccessChance>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <costList>
@@ -303,27 +253,11 @@
     </costList>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>13</power>
-        <cooldownTime>1.8</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.3</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>30</power>
+        <power>13</power>
         <cooldownTime>2.3</cooldownTime>
       </li>
     </tools>
@@ -340,21 +274,19 @@
   </ThingDef>
 
 
-
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>NetheriteSword</defName>
-    <label>下界合金剑</label>
-    <description>没错，材料是给核反应堆供能的那个铀\n“现在核电发电量是10A”\n“核电，轻而易举啊！”\n“坏了”\n“坏了坏了”\nkizuati1919死于核弹\nDante+Pearl死于核弹\nEci1pseWE死于核弹</description>
+    <defName>NetheriteShovel</defName>
+    <label>下界合金铲</label>
+    <description>这是一把下界合金铲，大幅提升了建造速度，建筑修复成功率和建造成功率</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/netherite_sword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/netherite_shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
     </weaponTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -363,6 +295,11 @@
       <MarketValue>180</MarketValue>
       <Beauty>20</Beauty>
     </statBases>
+    <equippedStatOffsets>
+        <ConstructionSpeed>0.9</ConstructionSpeed>
+        <FixBrokenDownBuildingSuccessChance>0.3</FixBrokenDownBuildingSuccessChance>
+        <ConstructSuccessChance>0.25</ConstructSuccessChance>
+    </equippedStatOffsets>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <costList>
@@ -371,27 +308,11 @@
     </costList>
     <tools>
       <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>40</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -406,4 +327,5 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
+
 </Defs>
