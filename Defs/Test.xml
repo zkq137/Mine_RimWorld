@@ -1,13 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>WoodSword</defName>
-    <label>木剑</label>
-    <description>这是一把木剑，由传奇工匠史蒂夫亲手设计</description>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>TestStoneSword</defName>
+    <label>测试石剑</label>
+    <description>这是一把测试石剑</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/WoodSword</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/stone_sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7)</drawSize>
     </graphicData>
@@ -16,25 +15,25 @@
       <li>MedievalMeleeAdvanced</li>
       <li>LongSword</li>
     </weaponTags>
-    <costStuffCount>10</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>9000</WorkToMake>
-      <Mass>1</Mass>
-      <MarketValue>40</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MarketValue>50</MarketValue>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-25</equippedAngleOffset>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <tools>
       <li>
         <label>handle</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>10</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -42,7 +41,7 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>13</power>
+        <power>18</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
       <li>
@@ -50,14 +49,14 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>13</power>
+        <power>18</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <skillRequirements>
-        <Crafting>3</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
       <displayPriority>420</displayPriority>
       <recipeUsers>
@@ -66,7 +65,5 @@
         <li>FueledSmithy</li> 
       </recipeUsers>
     </recipeMaker>
-  </ThingDef>
-
-  
-</Defs>
+  </ThingDef>   
+</Defs> 
